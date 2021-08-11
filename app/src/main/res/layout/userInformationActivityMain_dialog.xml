@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="20dp"
+              android:layout_marginEnd="20dp"
+              android:layout_marginStart="20dp"
+              android:layout_marginTop="20dp"
+              android:orientation="vertical"
+              android:padding="50dp"
+              tools:context="com.example.myapplication2.userInformation_MainActivity">
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                    android:paddingTop="200dp"
+                    android:text="Name:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+            <EditText
+                    android:paddingTop="200dp"
+                    android:id="@+id/u_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginStart="20sp"
+                    android:width="150px" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+
+                    android:text="Weight:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"/>
+            <EditText
+                    android:id="@+id/u_weight"
+                    android:width="200dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginLeft="20sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                    android:text="Height:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+
+            <EditText
+                    android:id="@+id/u_height"
+                    android:width="200dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginLeft="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <Button
+                app:backgroundTint="#8F8F8F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:onClick="confirmRecord"/>
+
+        <Button
+                app:backgroundTint="#8F8F8F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/next1"  />
+
+    </LinearLayout>
+
+</LinearLayout>

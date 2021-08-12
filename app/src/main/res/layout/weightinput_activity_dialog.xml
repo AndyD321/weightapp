@@ -10,7 +10,7 @@
               android:layout_marginTop="20dp"
               android:orientation="vertical"
               android:padding="50dp">
-             tools:context="com.example.myapplication2.weightInput>
+             tools:context="com.example.myapplication2.weightinput>
 
     <TableLayout
             android:layout_width="match_parent"
@@ -73,19 +73,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Save"
-                android:onClick="saveWeightInput"/>
+                android:onClick="saveWeightDate"/>
         <Button
                 app:backgroundTint="#8F8F8F"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View"
-                android:onClick="viewWeightInput"/>
+                android:onClick="viewWeightDate"/>
         <Button
                 app:backgroundTint="#8F8F8F"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Delete"
-                android:onClick="deleteWeightInput"/>
+                android:onClick="deleteWeightDate"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -11,7 +11,7 @@ import android.support.v7.app.AlertDialog
 class weightInput : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.weightInputActivity_dialog)
+        setContentView(R.layout.weightinput_activity_dialog)
     }
 
 //method for saving weight and date input in database

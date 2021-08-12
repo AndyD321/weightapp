@@ -10,10 +10,10 @@ import android.content.DialogInterface
 import android.support.v7.app.AlertDialog
 
 
-class userInformation_MainActivity : AppCompatActivity() {
+class userinformation_mainactivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.userInformationActivityMain_dialog)
+        setContentView(R.layout.userinformation_mainactivity_dialog)
 
         val next1 = findViewById<Next1>(R.id.next1)
             next1.setOnClickListener{

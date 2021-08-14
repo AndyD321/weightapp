@@ -83,7 +83,7 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context,DATABASE_NAME,
     }
 
     //method to delete data
-    fun deleteWeight(wei: WeiModelClass):Long{
+    fun deleteWeight(wei: WeiModelClass): Int {
         val db = this.writableDatabase
         val contentValues = ContentValues()
         contentValues.put(KEY_DATE, wei.dateData) // WeiModelClass dateData

@@ -1,14 +1,16 @@
 package com.example.myapplication2
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
 import android.content.DialogInterface
 import android.os.Bundle
-import android.support.v7.app.AlertDialog
+import androidx.appcompat.app.AlertDialog;
+import kotlinx.android.synthetic.main.weightinput_activity_dialog.*
 
-class weightInput : AppCompatActivity() {
+
+class WeightInput : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.weightinput_activity_dialog)
@@ -48,7 +50,7 @@ fun viewWeightDate(view: View){
 
     //creating custom ArrayAdapter2
     val myListAdapter2 = MyListAdapter2(this,weiArrayWeightInput,weiArrayDate)
-    listView.adapter2 = myListAdapter2
+    listView.adapter = myListAdapter2
 }
 
 //method for delete data based on date
@@ -56,7 +58,7 @@ fun deleteWeightDate(view: View){
     //creating AlertDialog for taking date
     val dialogBuilder = AlertDialog.Builder(this)
     val inflater = this.layoutInflater
-    val dialogView = inflater.inflate(R.layout.weightInputDelete_dialog, null)
+    val dialogView = inflater.inflate(R.layout.weightinput_delete_dialog, null)
     dialogBuilder.setView(dialogView)
 
     val dltWeightDate = dialogView.findViewById(R.id.deleteWeightDate) as EditText

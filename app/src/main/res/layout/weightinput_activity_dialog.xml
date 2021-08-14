@@ -10,7 +10,7 @@
               android:layout_marginTop="20dp"
               android:orientation="vertical"
               android:padding="50dp">
-             tools:context="com.example.myapplication2.weightinput>
+             tools:context="com.example.myapplication2.WeightInput>
 
     <TableLayout
             android:layout_width="match_parent"
